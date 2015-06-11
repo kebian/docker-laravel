@@ -23,6 +23,7 @@ RUN chmod 0755 /usr/bin/composer
 
 # Configure supervisord
 ADD supervisord.conf /etc/
+ADD supervisor_conf/* /etc/supervisor/conf.d/
 
 VOLUME ["/var/www"]
 
