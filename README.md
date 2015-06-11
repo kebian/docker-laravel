@@ -6,7 +6,8 @@ Dockerfile for Laravel server.
 * php-fpm 5.6
 * nginx
 * Laravel 5
+* git
+* composer
 * cron configured for schedule
 * 3 workers processing default queue
-* /var/www data volume
 * cron, workers and web server run as www-data with UID 1000
