@@ -1,8 +1,9 @@
 FROM debian:jessie
 MAINTAINER robs@codexsoftware.co.uk
 
-# Using this UID allows local and live file modification of web site
+# Using this UID / GID allows local and live file modification of web site
 RUN usermod -u 1000 www-data
+RUN groupmod -g 1000 www-data
 
 RUN apt-get update && apt-get install -y php5-fpm php5-mysql php5-sqlite php5-pgsql php5-mcrypt nginx supervisor cron git
 
