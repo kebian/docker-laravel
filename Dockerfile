@@ -9,6 +9,8 @@ RUN apt-get update && apt-get install -y php5-fpm php5-mysql php5-sqlite php5-pg
 
 # Set up web site.
 ADD nginx-default-server.conf /etc/nginx/sites-available/default
+ADD domain.crt /etc/nginx/conf.d/
+ADD domain.key /etc/nginx/conf.d/
 RUN echo "daemon off;" >> /etc/nginx/nginx.conf
 ADD website/ /var/www/
 RUN chown -R www-data.www-data /var/www/*
