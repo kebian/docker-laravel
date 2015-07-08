@@ -25,7 +25,7 @@ ADD https://getcomposer.org/composer.phar /usr/bin/composer
 RUN chmod 0755 /usr/bin/composer
 
 # Configure supervisord
-ADD supervisord.conf /etc/
+ADD supervisord.conf /etc/supervisor/
 ADD supervisor_conf/* /etc/supervisor/conf.d/
 
 EXPOSE 80
