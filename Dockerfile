@@ -31,4 +31,5 @@ ADD supervisor_conf/* /etc/supervisor/conf.d/
 EXPOSE 80
 EXPOSE 443
 
-ENTRYPOINT ["/usr/bin/supervisord"]
+ADD docker-entrypoint.sh /root/docker-entrypoint.sh
+ENTRYPOINT ["/root/docker-entrypoint.sh"]
