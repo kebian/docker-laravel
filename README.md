@@ -2,8 +2,8 @@ docker-laravel
 ==============
 Dockerfile for Laravel server.
 
-* Based on Debian Jessie
-* php-fpm 5.6
+* Based on Debian Stretch
+* php-fpm 7.0
 * nginx
 * Laravel 5
 * git
