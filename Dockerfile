@@ -28,6 +28,7 @@ RUN mkdir /run/php
 ADD crontab /var/spool/cron/crontabs/www-data
 RUN chown www-data.crontab /var/spool/cron/crontabs/www-data
 RUN chmod 0600 /var/spool/cron/crontabs/www-data
+RUN touch /etc/default/locale
 
 # Configure supervisord
 ADD supervisord.conf /etc/supervisor/
