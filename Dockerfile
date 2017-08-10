@@ -6,7 +6,7 @@ RUN usermod -u 1000 www-data
 RUN groupmod -g 1000 www-data
 
 #RUN apt-get clean && apt-get update && apt-get install -y php5-fpm php5-mysql php5-sqlite php5-pgsql php5-mcrypt php5-curl php5-memcached php5-gd nginx supervisor cron git ssmtp sudo
-RUN apt-get update && apt-get install -y php7.0-fpm php7.0-mysql php7.0-sqlite3 php7.0-pgsql php7.0-mcrypt php7.0-mbstring php7.0-json php7.0-curl php7.0-gd php7.0-zip php7.0-xml php-memcached nginx supervisor cron git ssmtp sudo
+RUN apt-get update && apt-get install -y php7.0-fpm php7.0-mysql php7.0-sqlite3 php7.0-pgsql php7.0-mcrypt php7.0-mbstring php7.0-json php7.0-curl php7.0-gd php7.0-zip php7.0-xml php7.0-soap php-memcached nginx supervisor cron git ssmtp sudo
 
 # Install composer
 ADD https://getcomposer.org/composer.phar /usr/bin/composer
